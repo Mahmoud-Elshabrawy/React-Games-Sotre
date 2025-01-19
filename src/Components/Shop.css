@@ -1,0 +1,12 @@
+ul {
+    list-style: none !important;
+}
+ul .link {
+    text-decoration: none !important;
+}
+.CategoryButton:hover {
+    background-color: #007aff !important;
+    border: none;
+    outline: none;
+}
+

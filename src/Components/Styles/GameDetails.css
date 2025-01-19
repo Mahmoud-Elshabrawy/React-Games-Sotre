@@ -1,0 +1,11 @@
+
+@media (max-width: 992px) {
+    .screenShots {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    .details {
+        margin-top: 40px !important;
+    }
+}

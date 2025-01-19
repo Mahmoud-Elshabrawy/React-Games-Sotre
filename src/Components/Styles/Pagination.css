@@ -1,0 +1,23 @@
+.pagination-btn {
+    width: 40px;
+    height: 40px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #000;
+    border: none;
+    outline: none;
+    transition: background-color 0.5s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #007aff !important;
+}
+
+.pagination-btn.active {
+    background-color: #007aff !important;
+    color: #fff;
+}

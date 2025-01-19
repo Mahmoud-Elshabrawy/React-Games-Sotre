@@ -1,0 +1,59 @@
+
+.BestGaming {
+    position: relative;
+}
+
+.BestGaming::after {
+    content: '.';
+    color: rgba(0, 122, 255, 0.01) !important;
+    width: 150px; 
+    height: auto; 
+    background-image: url('../Images/caption-dec.png'); 
+        background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    top: 100%; 
+    z-index: 1001;
+}
+@media (max-width: 992px) {
+    .welcome {
+        margin-top: 150px !important;
+    }
+}
+
+.search input:focus,
+.search input:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.feature-box:hover .box {
+    background-color: #ee626b !important;
+}
+@media (max-width: 770px) {
+    .box-row {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 993) {
+    .lastfirst {
+        height:  400px !important;
+    }
+}
+@media (max-width: 992px) {
+    .last {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        gap: 15px;
+    }
+
+    .lastfirst {
+        position: relative;
+        top: 0 !important;
+        left: 25% !important;
+        right: 0;
+    }
+}
