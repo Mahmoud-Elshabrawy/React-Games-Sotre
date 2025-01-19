@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Swal from 'sweetalert2';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import '../Components/Styles/Contact.css'
 
 const Contact = () => {
     const onSubmit = async (event) => {
@@ -35,9 +36,9 @@ const Contact = () => {
         Aos.init({duration: 1500})
     })
   return (
-    <div className='mt-5'> 
+    <div className='mt-5 margin'> 
     <div className="container mt-5">
-        <form className=' rounded-3 p-5 mt-5' data-aos = 'zoom-in'  style={{backgroundColor: 'blueviolet'}}
+        <form className=' rounded-3 p-5' data-aos = 'zoom-in'  style={{backgroundColor: 'blueviolet'}}
             onSubmit={onSubmit}
         >
             <h2 className='d-flex justify-content-center'>Contact Us</h2>
