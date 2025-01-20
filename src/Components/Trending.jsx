@@ -2,7 +2,6 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import RenderGames from './RenderGames';
 import { Link } from 'react-router-dom';
-import './Styles/TrendingGames.css'
 const Trending = () => {
     const [trending, setTrending] = useState([])
     const options = {

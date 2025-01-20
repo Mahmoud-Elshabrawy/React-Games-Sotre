@@ -7,7 +7,7 @@ const Footer = () => {
       style={{
         backgroundImage: `url(${footer})`,
         width: '100%',
-        height: '150px',
+        height: '100px',
         borderTopRightRadius: '70px',
         borderTopLeftRadius: '70px',
         display: 'flex',
@@ -18,7 +18,7 @@ const Footer = () => {
         bottom: '0',
       }}
     >
-      <h4 style={{}}>Copyright © 2048 LUGX Gaming Company</h4>
+      <h4 style={{}}>Copyright © 2048 LUGX Gaming</h4>
       <h6>By Mahmoud El-Shabrawy Mohamed</h6>
     </div>
   );

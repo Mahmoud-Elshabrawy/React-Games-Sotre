@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import {CartContext} from '../Components/Context/CartProvider'
-export const Navbar = () => {
+export const Navbar = ({logIn}) => {
 
   const {cartItems} = useContext(CartContext)
   useEffect(() => {
@@ -31,6 +31,9 @@ export const Navbar = () => {
               <li className={`nav-item transition `}>
                 <Link to={'/contact'} className="nav-link" href="#">Contact Us</Link>
               </li>
+              <li className={`nav-item transition `}>
+              <Link className="nav-link" to={'/login'}> <i className={`${!logIn ? `fa-solid fa-right-to-bracket px-2` : `fa-solid fa-right-from-bracket px-2`}`}></i>{logIn? 'logout' : 'login'}</Link>
+              </li>
               <Link to={'/cart'} className={`nav-item transition d-flex position-relative`}
                 style={{
                   paddingLeft : '10px',
@@ -40,6 +43,7 @@ export const Navbar = () => {
                 <a className="nav-link" href="#"><i className="fa-solid fa-cart-shopping"></i></a>
                 <div className='cartItems'><p>{cartItems}</p></div>
               </Link>
+              
             </ul>
           </div>
         </div>

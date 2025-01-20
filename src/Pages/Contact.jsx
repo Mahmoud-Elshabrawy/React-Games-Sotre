@@ -36,9 +36,9 @@ const Contact = () => {
         Aos.init({duration: 1500})
     })
   return (
-    <div className='mt-5 margin'> 
-    <div className="container mt-5">
-        <form className=' rounded-3 p-5' data-aos = 'zoom-in'  style={{backgroundColor: 'blueviolet'}}
+    <div className='mt-5 '> 
+    <div className="container mt-5 ">
+        <form className=' rounded-3 p-5 margin' data-aos = 'zoom-in'  style={{backgroundColor: 'blueviolet'}}
             onSubmit={onSubmit}
         >
             <h2 className='d-flex justify-content-center'>Contact Us</h2>

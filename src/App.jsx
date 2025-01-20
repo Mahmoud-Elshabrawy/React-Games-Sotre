@@ -14,15 +14,17 @@ import Contact from './Pages/Contact';
 import './App.css'
 import SearchResult from './Pages/SearchResult';
 import SearchProvider from './Components/Context/SearchProvider';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 function App() {
   const [count, setCount] = useState(0);
-
+  const [logIn, setLogIn] = useState(false)
   return (
     <div className="App">
       <CartProvider>
       <SearchProvider >
         <Router>
-          <Navbar />
+          <Navbar logIn = {logIn} />
           <div className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
@@ -34,6 +36,8 @@ function App() {
               <Route path="/game/:gameId" element={<GameDetails />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path='/login' element = {<Login setLogIn = {setLogIn}/>} />
+              <Route path='/register' element = {<Register/>}/>
             </Routes>
           </div>
           <Footer />
