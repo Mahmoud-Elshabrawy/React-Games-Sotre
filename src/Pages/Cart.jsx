@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import '../Components/Styles/Cart.css';
+import '../Components/Styles/Contact.css'
 
 const Cart = () => {
     const { cart, removeFromCart } = useContext(CartContext);
@@ -62,9 +63,9 @@ const Cart = () => {
     }, []);
 
 return (
-    <div className="container mt-5">
+    <div className="container ">
         {cart.length === 0 ? (
-            <h1 className="text-center mt-3">No items in the cart</h1>
+            <h1 className="text-center margin text-dark">No items in the cart</h1>
         ) : (
             <div className="row justify-content-center mt-5">
                 <div className="col-12 col-md-10 col-lg-12 mt-5">
