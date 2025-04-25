@@ -28,7 +28,9 @@ const Contact = () => {
                 title: "Success!",
                 text: "Message Sent Successfully!",
                 icon: "success"
-            });
+            }).then(() => {
+                window.location.reload()
+            })
         }
     };
 
