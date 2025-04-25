@@ -43,14 +43,14 @@ const SearchResult = () => {
 
     return (
         <div>
-            <h1 className='text-dark mt-5 d-flex justify-content-center'>
+            {/* <h1 className='text-dark mt-5 d-flex justify-content-center'>
                 You searched for: '{searchValue}'
-            </h1>
+            </h1> */}
 
             <div className="container mt-5 mb-5">
             {filteredResults.length > 0 ? (
                     filteredResults.map((game) => (
-                        <div key={game.id} className="mb-5">
+                        <div key={game.id} className="mb-5"  style={{marginTop: '130px'}}>
                             <div className="row justify-content-center align-items-center">
                                 <div className="col-lg-6 col-sm-12">
                                     <img src={game.thumbnail} data-aos='zoom-in-up' data-aos-duration='1000' style={{ width: '100%', height: '100%', borderRadius: '40px' }} alt={game.title} />

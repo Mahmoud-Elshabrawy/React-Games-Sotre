@@ -6,7 +6,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 const GameDetails = () => {
     const { gameId } = useParams()
-    const [game, setGame] = useState(null)  // Set initial state as null
+    const [game, setGame] = useState(null)  
     const options = {
         method: 'GET',
         headers: {
@@ -35,7 +35,7 @@ const GameDetails = () => {
 
     return (
         <div>
-            <div className="container"   style={{ marginTop: '50px', marginBottom: '100px' }}>
+            <div className="container"   style={{ marginTop: '150px', marginBottom: '100px' }}>
                 <div className="row justify-content-center align-items-center">
                     <div className="col-lg-6 col-sm-12">
                         <img src={game.thumbnail} data-aos = 'zoom-in-up' data-aos-duration = '1000' style={{ width: '100%', height: '100%', borderRadius: '40px' }} alt={game.title} />
